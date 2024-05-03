@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    records=[]
+    namel=[]
+    scorel=[]
+    for _ in range(int(input())):
+         name = input()
+         score = float(input())
+         records.append([name,score])
+         namel.append(name)
+         scorel.append(score)
+    scorel=list(set(scorel))
+    scorel.sort()
+    second=scorel[1]
+    out=[i[0] for i in records if i[1]==second]
+    out.sort()
