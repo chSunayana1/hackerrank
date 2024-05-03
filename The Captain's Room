@@ -1,0 +1,9 @@
+from collections import Counter
+
+k = int(input())
+room = list(map(int, input().split()))
+freq = Counter(room)
+for num, count in freq.items():
+    if count == 1:
+        print(num)
+        break
