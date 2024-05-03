@@ -1,0 +1,6 @@
+string = input()
+lowercase = sorted(filter(lambda x:x.islower(),string))
+uppercase = sorted(filter(lambda x:x.isupper(),string))
+odd_digits = sorted(filter(lambda c:c.isdigit() and int(c) % 2 != 0,string))
+eve= sorted(filter(lambda c:c.isdigit() and int(c) % 2 == 0,string))
+print(''.join(lowercase + uppercase + odd_digits + eve))
