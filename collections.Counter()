@@ -1,0 +1,9 @@
+X = int(input())
+sizes = list(map(int, input().split()))
+earned = 0
+for i in range(int(input())):
+    a,b = map(int, input().split())
+    if a in sizes:
+        earned += b
+        sizes.remove(a)
+print(earned)
